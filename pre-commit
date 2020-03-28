@@ -3,10 +3,10 @@
 if git rev-parse --verify HEAD >/dev/null 2>&1
 then
     against=HEAD
-    printf "\npre-commit: About to create the first commit...\n"
+    printf "\npre-commit: About to create a new commit...\n"
 else
     against=$(git hash-object -t tree /dev/null)
-    printf "\npre-commit: About to create a new commit...\n"
+    printf "\npre-commit: About to create the first commit...\n"
 fi
 
 printf  "pre-commit: Testing for whitespace errors 😨\n"
