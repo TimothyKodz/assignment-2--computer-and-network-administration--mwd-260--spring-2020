@@ -53,6 +53,10 @@ When you’re done, do the following:
 A. Copy the contents of your global Git config settings and paste it below. Use the following command to do so: `git config --global | pbcopy`. (This assumes you’ve installed the environment profile from our class’ examples folder.)
 
 ```bash
+[user]
+	email = TimothyKodz@gmail.com
+[init]
+	templatedir = ~/.git-templates
 ```
 
 B. Place the entire contents of your pre commit hook in the included file `pre-commit`.
